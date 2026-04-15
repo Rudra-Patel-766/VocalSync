@@ -1,0 +1,35 @@
+{
+  "last_15_sessions": [
+    {
+      "session_id": 15,
+      "date": "2024-03-12T10:30:00Z",
+      "wpm": 142.5,
+      "filler_ratio": 0.045,
+      "confidence_score": 0.78
+    },
+    {
+      "session_id": 14,
+      "date": "2024-03-11T14:15:00Z",
+      "wpm": 138.2,
+      "filler_ratio": 0.058,
+      "confidence_score": 0.72
+    },
+    {
+      "session_id": 13,
+      "date": "2024-03-10T09:45:00Z",
+      "wpm": 135.8,
+      "filler_ratio": 0.067,
+      "confidence_score": 0.69
+    }
+  ],
+  "wpm_growth": 15.3,
+  "filler_reduction": 32.8,
+  "confidence_trend": "improving",
+  "insights": [
+    "Speaking rate improved by 15%",
+    "Filler words reduced by 33%",
+    "Confidence significantly improved in recent sessions",
+    "Performance is very consistent",
+    "Great progress on filler word reduction!"
+  ]
+}

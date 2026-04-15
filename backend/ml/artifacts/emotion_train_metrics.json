@@ -1,0 +1,92 @@
+{
+  "model_version": "v2",
+  "dataset": "C:\\Users\\shukl\\Downloads\\archive\\data\\full_dataset\\merged.csv",
+  "dataset_delimiter": "comma",
+  "preprocessing": {
+    "raw_rows": 211225,
+    "usable_rows": 165805,
+    "dropped_empty_text": 17,
+    "dropped_unmapped": 45403,
+    "multi_label_rows": 19788,
+    "mapping_mode": "goemotions_wide_to_single_label",
+    "target_labels": [
+      "calm",
+      "confident",
+      "excited",
+      "nervous",
+      "neutral"
+    ]
+  },
+  "training": {
+    "accuracy": 0.568649920086849,
+    "macro_f1": 0.5190772869435221,
+    "weighted_f1": 0.5730487769543035,
+    "classes": [
+      "calm",
+      "confident",
+      "excited",
+      "nervous",
+      "neutral"
+    ],
+    "classification_report": {
+      "calm": {
+        "precision": 0.20638414969730326,
+        "recall": 0.38109756097560976,
+        "f1-score": 0.26776151374509105,
+        "support": 984.0
+      },
+      "confident": {
+        "precision": 0.6649800674639681,
+        "recall": 0.4982766544117647,
+        "f1-score": 0.5696834362275056,
+        "support": 8704.0
+      },
+      "excited": {
+        "precision": 0.6474298328602964,
+        "recall": 0.6326656394453004,
+        "f1-score": 0.6399625935162094,
+        "support": 6490.0
+      },
+      "nervous": {
+        "precision": 0.49394638224272125,
+        "recall": 0.5783966244725739,
+        "f1-score": 0.5328461478659722,
+        "support": 5925.0
+      },
+      "neutral": {
+        "precision": 0.5728643216080402,
+        "recall": 0.5979381443298969,
+        "f1-score": 0.5851327433628318,
+        "support": 11058.0
+      },
+      "accuracy": 0.568649920086849,
+      "macro avg": {
+        "precision": 0.5171209507744658,
+        "recall": 0.5376749247270292,
+        "f1-score": 0.5190772869435221,
+        "support": 33161.0
+      },
+      "weighted avg": {
+        "precision": 0.586660658873426,
+        "recall": 0.568649920086849,
+        "f1-score": 0.5730487769543035,
+        "support": 33161.0
+      }
+    },
+    "split": {
+      "train_size": 132644,
+      "test_size": 33161
+    },
+    "feature_selection": {
+      "tfidf_feature_count": 50000,
+      "selected_feature_count": 8000
+    },
+    "label_distribution": {
+      "nervous": 29627,
+      "neutral": 55289,
+      "excited": 32451,
+      "confident": 43517,
+      "calm": 4921
+    }
+  }
+}

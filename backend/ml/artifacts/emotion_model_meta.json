@@ -1,0 +1,5 @@
+{
+  "model_version": "v2",
+  "pipeline_file": "emotion_text_pipeline.joblib",
+  "metrics_file": "emotion_train_metrics.json"
+}
