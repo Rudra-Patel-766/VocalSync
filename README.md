@@ -1,30 +1,17 @@
-# AI Speech Coach
+# VocalSync
+
+AI Speech Coach
 
 A comprehensive web application for real-time speech analysis and feedback, powered by AI. Transform your public speaking skills with instant analysis of speaking rate, filler words, confidence, and more.
 
 ## 🚀 Features
 
 ### Core Functionality
-- **Real-time Speech Analysis**: Live feedback on speaking rate, filler words, volume, and silence detection
-- **AI-Powered Insights**: Advanced analysis using Whisper for transcription and rule-based emotion detection
-- **Goal-Based Practice**: Focused sessions for reducing fillers, improving fluency, interview prep, and presentations
-- **Comprehensive Analytics**: Track progress with detailed metrics, trends, and personalized recommendations
-- **Video Recording**: Optional webcam capture for body language and presentation skills analysis
 
 ### Technical Features
-- **Modern Tech Stack**: Next.js 14 frontend, FastAPI backend, MySQL database
-- **Real-time Communication**: WebSocket streaming for instant feedback
-- **Secure Authentication**: Firebase Google OAuth integration
-- **Scalable Architecture**: Clean, modular codebase with proper error handling
-- **Docker Support**: Containerized deployment with docker-compose
 
 ## 📋 Prerequisites
 
-- Node.js 18+ 
-- Python 3.11+
-- MySQL 8.0+
-- Docker & Docker Compose (optional)
-- Firebase project with Google OAuth enabled
 
 ## 🛠️ Quick Start
 
@@ -53,9 +40,6 @@ docker-compose up -d
 ```
 
 4. **Access the application**
-- Frontend: http://localhost:3000
-- Backend API: http://localhost:8000
-- API Documentation: http://localhost:8000/docs
 
 ### Option 2: Manual Setup
 
@@ -164,22 +148,12 @@ mysql -u username -p speech_coach < docs/database_schema.sql
 ## 📊 API Documentation
 
 ### Authentication Endpoints
-- `POST /api/v1/auth/login` - Firebase Google Sign-In
-- `GET /api/v1/auth/me` - Get current user info
-- `POST /api/v1/auth/logout` - Logout
 
 ### Session Endpoints
-- `POST /api/v1/session/start` - Start new practice session
-- `POST /api/v1/session/{id}/end` - End session
-- `GET /api/v1/session/` - List user sessions
-- `GET /api/v1/session/{id}` - Get session details
 
 ### Dashboard Endpoints
-- `GET /api/v1/dashboard/analytics` - Get performance analytics
-- `GET /api/v1/dashboard/insights` - Get personalized insights
 
 ### WebSocket
-- `WS /api/v1/session/ws/{session_id}` - Real-time audio streaming
 
 ## 🏗️ Architecture
 
@@ -246,17 +220,8 @@ frontend/
 ## 📈 Metrics & Analytics
 
 ### Speech Metrics
-- **Words Per Minute (WPM)**: Speaking rate analysis
-- **Filler Word Ratio**: Percentage of filler words
-- **Pause Analysis**: Average pause duration and frequency
-- **Pitch Variance**: Vocal variety and expressiveness
-- **Volume Stability**: Consistency of speaking volume
 
 ### Analytics Features
-- **Progress Tracking**: 15-session trend analysis
-- **Performance Insights**: AI-generated recommendations
-- **Goal Achievement**: Progress toward specific objectives
-- **Comparative Analysis**: Skill benchmarking and improvement
 
 ## 🚀 Deployment
 
@@ -380,10 +345,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Support
 
 For support and questions:
-- Create an issue on GitHub
-- Check the troubleshooting guide
-- Review the API documentation
 
----
 
 **Built with ❤️ for improving public speaking skills**
