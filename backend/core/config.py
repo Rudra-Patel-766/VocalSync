@@ -1,11 +1,14 @@
 import os
 from typing import Optional
 from pydantic_settings import BaseSettings
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 class Settings(BaseSettings):
     # Database
-    DATABASE_URL: str = "mysql+mysqlconnector://root:vyom%402004@localhost:3306/speech_coach"
+    DATABASE_URL=os.getenv("DATABASE_URL")
     
     # Firebase
     FIREBASE_PROJECT_ID: Optional[str] = None
