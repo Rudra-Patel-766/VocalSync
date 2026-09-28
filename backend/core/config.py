@@ -8,7 +8,7 @@ load_dotenv()
 
 class Settings(BaseSettings):
     # Database
-    DATABASE_URL=os.getenv("DATABASE_URL")
+    DATABASE_URL: str
     
     # Firebase
     FIREBASE_PROJECT_ID: Optional[str] = None
@@ -18,7 +18,7 @@ class Settings(BaseSettings):
     FIREBASE_CLIENT_ID: Optional[str] = None
     
     # JWT
-    SECRET_KEY: str = "your-secret-key-here"
+    SECRET_KEY: str = "test"
     ALGORITHM: str = "HS256"
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 30
     
